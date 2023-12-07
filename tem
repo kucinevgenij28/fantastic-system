@@ -1,0 +1,17 @@
+            SupportedView()
+            Text(text)
+            
+        }
+        .onPreferenceChange(CustomPreferenceKey.self, perform: { value in
+            self.text = value
+            print("resive")
+        })
+    }
+}
+
+struct UsingCustomPreferenceKeyView_Previews: PreviewProvider {
+    static var previews: some View {
+        UsingCustomPreferenceKeyView()
+    }
+}
+
